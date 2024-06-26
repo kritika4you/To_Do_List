@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav>
-        <div class="nav-left">
-            <a href="/">To-Do List</a>
-        </div>
-        <div class="nav-right">
-            <% if (isLoggedIn) { %>
-                <a href="/logout">Logout</a>
-                <% } else { %>
-                    <a href="/login">Login</a>
-                    <a href="/signup">Signup</a>
-                    <% } %>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="/">To-Do List</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <% if (isLoggedIn) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                    <% } else { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Signup</a>
+                        </li>
+                        <% } %>
+            </ul>
         </div>
     </nav>
     <div class="container">

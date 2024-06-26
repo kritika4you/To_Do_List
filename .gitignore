@@ -73,3 +73,43 @@ yarn.lock
 .Network Trash Folder
 .TemporaryItems
 .apdisk
+
+# Visual Studio Code directories and files
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+
+# Temporary files created by text editors
+*.swp
+*.tmp
+
+# Exclude app build artifacts and config
+dist/
+out/
+
+# Yarn error log
+yarn-error.log
+
+# Local environment settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# vuepress build output
+.vuepress/dist/
+
+# Temporary files and folders
+tmp/
+temp/
