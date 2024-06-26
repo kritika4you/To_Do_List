@@ -4,6 +4,19 @@ body {
     color: #6b2727;
 }
 
+.navbar-custom {
+    background-color: #ff69b4;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ff1493;
+}
+
 .container {
     max-width: 500px;
     margin: 0 auto;
