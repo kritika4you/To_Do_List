@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="/">To-Do List</a>
+        </div>
+        <div class="nav-right">
+            <% if (isLoggedIn) { %>
+                <a href="/logout">Logout</a>
+                <% } else { %>
+                    <a href="/login">Login</a>
+                    <a href="/signup">Signup</a>
+                    <% } %>
+        </div>
+    </nav>
+
+    <div class="container">
+        <% if (typeof body !== 'undefined') { %>
+            <%- body %>
+                <% } %>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

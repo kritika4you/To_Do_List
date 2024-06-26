@@ -2,7 +2,6 @@ const taskInput = document.getElementById('task-input');
 const addTaskButton = document.getElementById('add-task');
 const taskList = document.getElementById('task-list');
 
-// Load tasks from local storage
 loadTasks();
 
 // Add a new task

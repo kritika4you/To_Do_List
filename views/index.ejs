@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav>
+        <div class="nav-left">
+            <a href="/">To-Do List</a>
+        </div>
+        <div class="nav-right">
+            <% if (isLoggedIn) { %>
+                <a href="/logout">Logout</a>
+                <% } else { %>
+                    <a href="/login">Login</a>
+                    <a href="/signup">Signup</a>
+                    <% } %>
+        </div>
+    </nav>
     <div class="container">
         <h1>To-Do List</h1>
         <div class="input-container">
